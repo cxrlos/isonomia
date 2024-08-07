@@ -15,21 +15,21 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build
-      run: cargo build --verbose
+    run: cd backend && cargo build --verbose
 
   unit-tests:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - name: Run tests
-      run: cargo test --verbose
+      run: cd backend && cargo test --verbose
 
   lint:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - name: Run clippy
-      run: cargo clippy -- -D warnings
+      run: cd backend && cargo clippy -- -D warnings
 
       # format:
       #   runs-on: ubuntu-latest
