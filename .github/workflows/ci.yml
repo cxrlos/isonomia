@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build
-    run: cd backend && cargo build --verbose
+      run: cd backend && cargo build --verbose
 
   unit-tests:
     runs-on: ubuntu-latest
@@ -36,4 +36,4 @@ jobs:
       #   steps:
       #   - uses: actions/checkout@v4
       #   - name: Check formatting
-      #     run: cargo fmt -- --check
+      #     run: cd backend && cargo fmt -- --check
