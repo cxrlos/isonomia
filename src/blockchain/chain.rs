@@ -4,6 +4,12 @@ pub struct Isonomia {
     chain: Vec<Block>,
 }
 
+impl Default for Isonomia {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl Isonomia {
     pub fn new() -> Self {
         let genesis_block = Block::new(0, String::from("Genesis Block"), String::from("0"));
