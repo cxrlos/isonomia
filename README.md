@@ -1,5 +1,5 @@
-# 🏛️ Isonomia _Blockchain-based Voting System_
-##### _From the Greek ἴσος isos, "equal," and νόμος nomos, "usage, custom, law,"_
+# 🏛️ Isonomia | _Blockchain-based Voting System_
+_From the Greek ἴσος isos, "equal," and νόμος nomos, "usage, custom, law,"_
 
 Isonomia is a secure, reliable, and scalable blockchain-based voting system developed in Rust. It provides a robust foundation for creating and managing elections with cryptographic integrity.
 
