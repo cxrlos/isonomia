@@ -7,6 +7,12 @@ pub struct Election {
     blockchain: Isonomia,
 }
 
+impl Default for Election {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl Election {
     pub fn new() -> Self {
         Election {
